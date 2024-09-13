@@ -1,0 +1,11 @@
+.container {
+  background-image: url(../../../../assets/ppterms/vector.png);
+  background-repeat: no-repeat;
+  background-size: 650px;
+  background-position: top;
+}
+
+.test > li::marker {
+  color: green;
+  font-size: 2rem;
+}

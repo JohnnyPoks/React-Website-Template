@@ -1,0 +1,46 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 3rem 9%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: 0.3s;
+  border-bottom: 1px solid var(--line-color);
+  padding-bottom: 5px;
+}
+
+/* .logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.logochild {
+  color: var(--second-text-color);
+} */
+
+.navbar a {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 400;
+  margin-left: 3.5rem;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background: linear-gradient(90deg, #903aff 3.08%, #ff26b9 93.85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar .links:nth-child(4) {
+  margin-right: 3.5rem;
+}
+

@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+:root {
+  --line-color: rgba(255, 255, 255, 0.18);
+  --bg-color: #150e28;
+  --second-bg-color: #903aff;
+  --text-color: #ffffff;
+  --second-text-color: #d434fe;
+  --primary-color: linear-gradient(
+    270deg,
+    #903aff 0%,
+    #d434fe 56.42%,
+    #ff26b9 99.99%,
+    #fe34b9 100%
+  );
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10rem 0% 2rem;
+}
