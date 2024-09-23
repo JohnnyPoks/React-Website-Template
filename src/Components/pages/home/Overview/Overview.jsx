@@ -5,11 +5,11 @@ import KeyAttributes from "./KeyAttributes";
 
 const Overview = () => {
   return (
-    <>
+    <div id="Overview">
       <Intro />
       <Rules />
       <KeyAttributes />
-    </>
+    </div>
   );
 };
 

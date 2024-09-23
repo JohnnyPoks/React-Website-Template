@@ -1,5 +1,6 @@
 import "./overview.css";
 import people from "../../../../assets/overview/overview_3.png";
+import Button from "../../../partials/button/Button";
 
 const KeyAttributes = () => {
   const KeyAttributesContent = [
@@ -31,21 +32,21 @@ const KeyAttributes = () => {
   ];
 
   return (
-    <section className="flex flex-row pb-40 border-b-separator border-b-[1px] border-solid border-x-0 border-t-0">
+    <section className="flex flex-col lg:flex-row pb-40 border-b-separator border-b-[1px] border-solid border-x-0 border-t-0">
       <div className="basis-1/2 flex items-center justify-center">
         <img className="w-[80%]" src={people} alt="People Standing" />
       </div>
-      <div className="basis-1/2 flex flex-col items-center justify-center">
+      <div className="basis-1/2 flex flex-col items-start max-lg:items-center max-lg:justify-center gap-5 max-lg:text-center">
         <div className="w-[100%]">
           <h1 className="text-[36px]/[1.3] font-bold">Judging Criteria</h1>
           <h1 className="text-secondaryTextColor text-[36px]/[1.3] font-bold">
             Key attributes
           </h1>
         </div>
-        <div className="w-full">
+        <div className="max-lg:flex flex-col justify-center items-center text-center lg:text-left">
           {KeyAttributesContent.map((content, index) => {
             return (
-              <p 
+              <p
                 key={index}
                 className="text-xl font-normal leading-[2] mt-5 w-[75%]"
               >
@@ -57,11 +58,7 @@ const KeyAttributes = () => {
             );
           })}
         </div>
-        <div className="w-full mt-14">
-          <a href="#" className="register-text">
-            Register
-          </a>
-        </div>
+        <Button Text="Register" />
       </div>
     </section>
   );

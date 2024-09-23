@@ -1,5 +1,7 @@
 import "./faqs.css";
 import thinkingBoy from "../../../../assets/faqs/faqs.png";
+import question_1 from "../../../../assets/faqs/1.png";
+import question_2 from "../../../../assets/faqs/2.png";
 
 const FAQs = () => {
   const FAQContent = [
@@ -24,9 +26,12 @@ const FAQs = () => {
   ];
 
   return (
-    <section className="flex flex-row border-b-separator border-b-[1px] border-solid border-x-0 border-t-0">
+    <section
+      id="FAQs"
+      className="flex flex-col max-lg:gap-40 lg:flex-row border-b-separator border-b-[1px] border-solid border-x-0 border-t-0"
+    >
       <div className="basis-1/2 flex flex-col gap-16 items-center justify-center">
-        <div className="w-[60%]">
+        <div className="w-[60%] max-lg:flex flex-col items-center max-lg:text-center">
           <h1 className="text-[36px]/[1.3] font-bold">Frequently Ask</h1>
           <h1 className="text-secondaryTextColor text-[36px]/[1.3] font-bold">
             Questions
@@ -50,7 +55,24 @@ const FAQs = () => {
           })}
         </div>
       </div>
-      <div className="basis-1/2 flex items-center justify-start">
+      <div className="basis-1/2 flex flex-col gap-20 items-center justify-center lg:justify-start relative">
+        <div className="flex gap-10">
+          <img
+            className="w-14 absolute top-[30px] right-[300px] sm:right-[520px] md:right-[700px] lg:right-[480px] xl:right-[550px] 2xl:right-[600px]"
+            src={question_2}
+            alt="Question 2"
+          />
+          <img
+            className="w-20 absolute top-[-50px] right-[200px] sm:right-[400px] md:right-[550px] lg:right-[350px] xl:right-[420px] 2xl:right-[450px]"
+            src={question_1}
+            alt="Question 1"
+          />
+          <img
+            className="w-14 absolute top-[30px] right-[100px] sm:right-[300px] md:right-[400px] lg:right-[250px] xl:right-[300px] 2xl:right-[325px]"
+            src={question_2}
+            alt="Question 2"
+          />
+        </div>
         <img className="w-[80%]" src={thinkingBoy} alt="Boy Thinking" />
       </div>
     </section>

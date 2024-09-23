@@ -4,16 +4,16 @@ import arrow from "../../../../assets/overview/arrow.png";
 
 const Intro = () => {
   return (
-    <section className="flex flex-row border-b-separator border-b-[1px] border-solid border-x-0 border-t-0">
-      <div className="basis-1/2 flex items-center justify-end">
+    <section className="flex flex-col lg:flex-row max-lg:gap-y-20 border-b-separator border-b-[1px] border-solid border-x-0 border-t-0">
+      <div className="basis-1/2 flex items-center justify-center lg:justify-end relative">
         <img className="w-[80%]" src={bulb} alt="The Intro Image" />
         <img
-          className="size-16 relative right-[15px] bottom-[-330px]"
+          className="absolute size-10 bottom-[-50px] lg:size-16 lg:relative lg:right-[15px] lg:bottom-[-330px]"
           src={arrow}
           alt="Arrow Image"
         />
       </div>
-      <div className="basis-1/2 flex flex-col items-center justify-center">
+      <div className="basis-1/2 flex flex-col items-center justify-center max-lg:text-center">
         <div className="w-[70%]">
           <h1 className="text-[36px]/[1.3] font-bold">
             Introduction to getlinked

@@ -3,8 +3,8 @@ import girl from "../../../../assets/overview/overview_2.png";
 
 const Rules = () => {
   return (
-    <section className="flex flex-row border-b-separator border-b-[1px] border-solid border-x-0 border-t-0">
-      <div className="basis-1/2 flex flex-col items-center justify-center">
+    <section className="flex flex-col-reverse lg:flex-row border-b-separator border-b-[1px] border-solid border-x-0 border-t-0">
+      <div className="basis-1/2 flex flex-col items-center justify-center max-lg:text-center">
         <div className="w-[70%]">
           <h1 className="text-[36px]/[1.3] font-bold">Rules and</h1>
           <h1 className="text-secondaryTextColor text-[36px]/[1.3] font-bold">
@@ -20,7 +20,7 @@ const Rules = () => {
           that can change the world, that&apos;s what we&apos;re all about!
         </p>
       </div>
-      <div className="basis-1/2 flex items-center justify-start">
+      <div className="basis-1/2 flex items-center justify-center lg:justify-start">
         <img className="w-[80%]" src={girl} alt="Girl Sitting" />
       </div>
     </section>

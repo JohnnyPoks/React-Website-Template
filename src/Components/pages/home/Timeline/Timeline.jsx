@@ -41,7 +41,7 @@ const Timeline = () => {
   ];
 
   return (
-    <section className="flex flex-col justify-center items-center text-xl border-b-separator border-b-[1px] border-solid border-x-0 border-t-0 px-36">
+    <section id="Timeline" className="flex flex-col justify-center items-center text-xl border-b-separator border-b-[1px] border-solid border-x-0 border-t-0 px-36">
       <div className="flex flex-col items-center text-center p-2 mb-[5%]">
         <h1 className="text-[36px]/[1.3] font-bold">Timeline</h1>
         <p className="w-[50%]">
