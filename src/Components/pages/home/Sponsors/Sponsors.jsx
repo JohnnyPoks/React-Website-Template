@@ -1,9 +1,9 @@
 import "./sponsor.css";
-import libertyLogo from "../../../../assets/sponsors/Liberty company logo.png";
-import libertyPay from "../../../../assets/sponsors/Liberty company.png";
-import winwise from "../../../../assets/sponsors/Winwise logo.png";
-import payBox from "../../../../assets/sponsors/Paybox.png";
-import wisper from "../../../../assets/sponsors/wisper logo.png";
+import libertyLogo from "../../../../assets/home/sponsors/Liberty company logo.png";
+import libertyPay from "../../../../assets/home/sponsors/Liberty company.png";
+import winwise from "../../../../assets/home/sponsors/Winwise logo.png";
+import payBox from "../../../../assets/home/sponsors/Paybox.png";
+import wisper from "../../../../assets/home/sponsors/wisper logo.png";
 
 const Separator = () => {
   return (
@@ -63,15 +63,6 @@ const Sponsors = () => {
           height_2="4rem"
           width_2="12rem"
         />
-        {/* <div className="flex flex-col justify-between items-center">
-          <div>
-            <img className="w-52 h-10 mb-20" src={libertyPay} alt="Logo" />
-          </div>
-          <div className="p-1 my-6 w-80 h-1 bg-secondaryTextColor"></div>
-          <div>
-            <img className="w-48 h-16 mt-20" src={payBox} alt="Logo" />
-          </div>
-        </div> */}
 
         <Separator />
 

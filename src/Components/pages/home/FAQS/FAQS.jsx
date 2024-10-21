@@ -1,7 +1,7 @@
 import "./faqs.css";
-import thinkingBoy from "../../../../assets/faqs/faqs.png";
-import question_1 from "../../../../assets/faqs/1.png";
-import question_2 from "../../../../assets/faqs/2.png";
+import thinkingBoy from "../../../../assets/home/faqs/faqs.png";
+import question_1 from "../../../../assets/home/faqs/1.png";
+import question_2 from "../../../../assets/home/faqs/2.png";
 
 const FAQs = () => {
   const FAQContent = [

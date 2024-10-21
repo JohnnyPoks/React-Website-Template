@@ -1,5 +1,6 @@
 import "./ppterms.css";
-import boy from "../../../../assets/ppterms/boy.png";
+import boy from "../../../../assets/home/ppterms/boy.png";
+import Button from "../../../partials/button/Button";
 
 const PPTerms = () => {
   return (
@@ -43,10 +44,8 @@ const PPTerms = () => {
               </li>
             </ul>
           </div>
-          <div className="text-center">
-            <a href="#" className="register-text text-center">
-              Register
-            </a>
+          <div className="flex justify-center">
+            <Button Text="Read More" />
           </div>
         </div>
       </div>

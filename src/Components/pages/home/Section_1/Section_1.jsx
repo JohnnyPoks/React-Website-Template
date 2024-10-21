@@ -1,10 +1,10 @@
 import "./Section_1.css";
-import chain from "../../../../assets/section_1/chain.png";
-import spark from "../../../../assets/section_1/spark.png";
-import vector from "../../../../assets/section_1/vector.png";
-import man from "../../../../assets/section_1/men.png";
-import sun from "../../../../assets/section_1/sun.png";
-import bulb from "../../../../assets/section_1/bulb.png";
+import chain from "../../../../assets/home/section_1/chain.png";
+import spark from "../../../../assets/home/section_1/spark.png";
+import vector from "../../../../assets/home/section_1/vector.png";
+import man from "../../../../assets/home/section_1/men.png";
+import sun from "../../../../assets/home/section_1/sun.png";
+import bulb from "../../../../assets/home/section_1/bulb.png";
 import Button from "../../../partials/button/Button";
 
 const Section_1 = () => {
@@ -20,12 +20,12 @@ const Section_1 = () => {
         />
       </div>
 
-      <div className="flex flex-col items-center justify-center lg:flex-row">
+      <div className="flex flex-col items-center justify-center lg:flex-row lg:pl-10">
         <div className="flex basis-1/2 flex-col lg:items-start items-center justify-center px-10 py-5 pt-20 md:px-0 lg:pl-5 2xl:pl-20 gap-5 lg:gap-10">
           <div className="flex flex-col text-center lg:text-left">
-            <h1 className="text-[40px]/[1] md:text-[60px]/[1] xl:text-[70px]/[1] 2xl:text-[80px]/[1] font-bold relative">
+            <h1 className="text-[40px]/[1] md:text-[60px]/[1] lg:text-[50px]/[1] xl:text-[70px]/[1] 2xl:text-[80px]/[1] font-bold relative">
               <img
-                className="size-14 lg:size-fit absolute left-[300px] top-[-45px] md:left-[510px] md:top-[-40px] lg:left-[355px] lg:top-[-55px] xl:left-[410px] xl:-top-14 2xl:left-[480px] 2xl:top-[-50px]"
+                className="size-14 lg:size-fit absolute left-[70%] top-[-50px] sm:left-[65%] sm:top-[-50px] md:left-[510px] md:top-[-40px] lg:left-[290px] lg:top-[-60px] xl:left-[410px] xl:-top-14 2xl:left-[480px] 2xl:top-[-50px]"
                 src={bulb}
               />
               getlinked Tech <br /> Hackathon
@@ -64,7 +64,7 @@ const Section_1 = () => {
           </div>
         </div>
 
-        <div className="flex basis-1/2 relative h-[100%] ">
+        <div className="flex basis-1/2 relative h-[100%]">
           <img className="size-full" src={man} />
           <img
             className="absolute sm:bottom-[-80px] right-[5px] z-10"

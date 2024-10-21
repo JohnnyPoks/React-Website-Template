@@ -1,5 +1,5 @@
 import "./overview.css";
-import girl from "../../../../assets/overview/overview_2.png";
+import girl from "../../../../assets/home/overview/overview_2.png";
 
 const Rules = () => {
   return (

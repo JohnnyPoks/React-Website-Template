@@ -1,8 +1,6 @@
 import "./prizes.css";
-import prize from "../../../../assets/prizes/prize.png";
-// import lens from "../../assets/prizes/lens.png";
-// import lens_1 from "../../assets/prizes/lens_1.png";
-import rewards from "../../../../assets/prizes/rewards.png";
+import prize from "../../../../assets/home/prizes/prize.png";
+import rewards from "../../../../assets/home/prizes/rewards.png";
 
 const Prizes = () => {
   return (

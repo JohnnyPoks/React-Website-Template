@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./navbar.css";
 import Button from "../button/Button";
 
 const Navbar = () => {
   const navigation = [
-    { name: "Timeline", href: "#Timeline" },
-    { name: "Overview", href: "#Overview" },
-    { name: "FAQs", href: "#FAQs" },
-    { name: "Contact", href: "#Contact" },
+    { name: "Timeline", href: "/#Timeline" },
+    { name: "Overview", href: "/#Overview" },
+    { name: "FAQs", href: "/#FAQs" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const [activeNav, setActiveNav] = useState("#");
@@ -30,9 +31,9 @@ const Navbar = () => {
   }, [toggleMenu]);
 
   return (
-    <header className="z-50 bg-primarybgColor flex justify-around items-center py-5 pt-10 sticky top-0 border-b-separator border-b-[1px] border-solid border-x-0 border-t-0">
+    <header className="z-[100] w-full bg-primarybgColor flex justify-between max-lg:justify-around lg:px-20 xl:px-40 items-center py-5 pt-10 sticky top-0 border-b-separator border-b-[1px] border-solid border-x-0 border-t-0">
       {!toggle && (
-        <a href="#" className="text-5xl/[0] font-[600]">
+        <a href="/" className="text-5xl/[0] font-[600]">
           get<span className="text-secondaryTextColor">Linked</span>
         </a>
       )}
@@ -48,22 +49,24 @@ const Navbar = () => {
           className={` links flex lg:gap-10 ${toggle ? "flex-col gap-5" : ""}`}
         >
           {navigation.map((item, index) => (
-            <a
+            <Link
               key={index}
-              href={item.href}
+              to={item.href}
               onClick={() => {
-                setActiveNav(item.href);
+                setActiveNav(item.name);
                 setToggle(false);
               }}
               className={
-                activeNav === item.href ? "active" : "text-primaryTextColor"
+                activeNav === item.name ? "active" : "text-primaryTextColor"
               }
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
-        <Button Text={"Register"} />
+        <div onClick={() => setToggle(false)}>
+          <Button Text={"Register"} />
+        </div>
       </nav>
 
       {toggleMenu && (

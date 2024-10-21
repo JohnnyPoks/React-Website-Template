@@ -1,6 +1,6 @@
 import "./overview.css";
-import bulb from "../../../../assets/overview/overview_1.png";
-import arrow from "../../../../assets/overview/arrow.png";
+import bulb from "../../../../assets/home/overview/overview_1.png";
+import arrow from "../../../../assets/home/overview/arrow.png";
 
 const Intro = () => {
   return (

@@ -1,5 +1,5 @@
 import "./overview.css";
-import people from "../../../../assets/overview/overview_3.png";
+import people from "../../../../assets/home/overview/overview_3.png";
 import Button from "../../../partials/button/Button";
 
 const KeyAttributes = () => {
